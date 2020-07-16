@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Vue Fastify Time Tracker",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node src/app.js",
+    "start": "nodemon src/app.js --exec \"npm run lint && node\"",
+    "lint": "eslint --ext .js src/",
+    "lint:fix": "eslint --ext .js src/ --fix",
+    "prod": "pm2 start src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Fastify"
+  ],
+  "author": "Pasham Akhil Kumar Reddy <pashamakhilkumarreddy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastify": "^3.0.3",
+    "fastify-compress": "^3.2.1",
+    "fastify-cors": "^4.0.0",
+    "fastify-helmet": "^4.0.2",
+    "fastify-http-proxy": "^4.0.2",
+    "fastify-rate-limit": "^4.0.2",
+    "fastify-response-time": "^1.1.0",
+    "mongoose": "^5.9.24",
+    "pm2": "^4.4.0",
+    "under-pressure": "^5.0.0"
+  }
+}
